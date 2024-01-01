@@ -32,7 +32,7 @@
   },
   "scripts": {
     "prepare": "bun x husky install",
-    "lint": "bun x eslint --fix",
+    "lint": "bun x eslint . --fix",
     "commitlint": "bun x commitlint --edit $1",
     "format": "bun x prettier . --write --ignore-unknown",
     "build": "bun run ./scripts/build.ts"
@@ -41,7 +41,10 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@eslint/eslintrc": "^3.0.0",
     "@types/bun": "latest",
+    "@types/eslint__eslintrc": "^2.1.1",
+    "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
     "bun-plugin-dts": "^0.2.1",

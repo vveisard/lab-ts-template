@@ -1,6 +1,7 @@
+import type { BuildOutput } from "bun";
 import dts from "bun-plugin-dts";
 
-const buildTask = Bun.build({
+const buildTask: Promise<BuildOutput> = Bun.build({
   entrypoints: ["./src/index.ts"],
   outdir: "./out",
   target: "browser",
